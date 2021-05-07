@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nandos Nuts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function () {
+        $("#menu").slicknav({
+            prependTo: "#mobilemenu"
+        });
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/643748d811.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header"><a name="home"></a>
+    <div class="logo">
+        <img src="nandoslogoig.jpg" alt="Nandos Nuts Logo">
+        <h1>N.A.N.D.O's Donuts</h1>
+    </div>
+    <h4>"The Best Donut in Chapel Hill"</h4>
+  </header>
+  <nav id="mobilemenu">
+    <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <article class="content">
+        <div class="image1">
+            <div class="wrapper">
+                <div class="container">
+                  <div class="top"></div>
+                  <div class="bottom">
+                    <div class="left">
+                      <div class="details">
+                        <h1>Single</h1>
+                        <p>$1</p>
+                      </div>
+                      <div class="buy"><i class="material-icons">Add to cart</i></div>
+                    </div>
+                    <div class="right">
+                      <div class="done"><i class="material-icons">done</i></div>
+                      <div class="details">
+                        <h1>Donut</h1>
+                        <p>Added to your cart</p>
+                      </div>
+                      <div class="remove"><i class="material-icons">clear</i></div>
+                    </div>
+                  </div>
+                </div>
+                
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="image2">
+            <div class="wrapper">
+                <div class="container">
+                  <div class="top"></div>
+                  <div class="bottom">
+                    <div class="left">
+                      <div class="details">
+                        <h1>Dozen</h1>
+                        <p>$10</p>
+                      </div>
+                      <div class="buy"><i class="material-icons">Add to cart</i></div>
+                    </div>
+                    <div class="right">
+                      <div class="done"><i class="material-icons">done</i></div>
+                      <div class="details">
+                        <h1>Donut</h1>
+                        <p>Added to your cart</p>
+                      </div>
+                      <div class="remove"><i class="material-icons">clear</i></div>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="media">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F103089548308859%2Fvideos%2F136858328265314%2F&show_text=true&width=380" style="border:none;overflow:auto" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+    </article>
+    <article class="text1">
+    </article>
+    <article class="text2">
+    </article>
+    <footer class="footer">
+      <form method="get" action="dummy"> <!--HTML validator wouldn't let me leave action blank-->
+        <fieldset>
+        <h3>Contact Us:</h3>
+        <div>
+            <label>
+                <input type="text" name="fullname" placeholder="Name"/>
+            </label>
+        </div>
+        <div>
+            <label for="email"></label>
+            <input id="email" type="email" name="email" placeholder="Email" required />
+        </div>
+        <div>
+          <label>
+            <input type="text" name="message" placeholder="Leave us a message!"/>
+          </label>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </fieldset>
+      </form> 
+      <div class="hours">
+        <section class="dates">
+            <h2>HOURS</h2>
+            <h3>Sundays 10-1</h3>
+            <p>Check instagram for updates</p>
+        </section>
+        <section class="links">
+            <a href="https://www.instagram.com/nandos_nuts/?hl=en">
+                <i class="fa fa-instagram fa-3x"></i>
+            </a>    
+            <a href="https://www.facebook.com/NANDOs-Donuts-103089548308859/">
+                <i class="fab fa-facebook-square fa-3x"></i>
+            </a>
+            <a href="https://www.tiktok.com/@nandos_nuts?lang=en">
+                <i class="fab fa-tiktok fa-lg fa-3x"></i>
+            </a>
+        </section>
+        <section class="address">
+          <p>119 East Longview Street</p>
+        </section>
+    </div>
+    </footer>
+    <script>
+        $('.buy').click(function(){
+  $('.bottom').addClass("clicked");
+});
+
+$('.remove').click(function(){
+  $('.bottom').removeClass("clicked");
+});
+    </script>
+</body>
